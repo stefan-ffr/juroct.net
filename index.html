@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juro</title>
+    <link href="https://cdn.jsdelivr.net/gh/stefan-ffr/juroct-cdn@main/v1/juroct.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="https://cdn.jsdelivr.net/gh/stefan-ffr/juroct-cdn@main/v1/logo.svg">
+    <style>
+        .hero {
+            text-align: center;
+            padding: 80px 24px 40px;
+        }
+        .hero img {
+            height: 64px;
+            margin-bottom: 16px;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--juro-primary);
+            letter-spacing: -0.02em;
+        }
+        .hero p {
+            margin: 12px 0 0;
+            color: var(--juro-text-muted);
+            font-size: 1.1rem;
+        }
+        .services {
+            max-width: 720px;
+            margin: 24px auto 64px;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 16px;
+        }
+        .service {
+            background: var(--juro-surface);
+            border: 1px solid var(--juro-border);
+            border-radius: var(--juro-radius-lg);
+            padding: 20px;
+            text-decoration: none;
+            transition: border-color 0.15s, transform 0.15s;
+        }
+        .service:hover {
+            border-color: var(--juro-primary);
+            transform: translateY(-2px);
+        }
+        .service h3 {
+            margin: 0 0 6px;
+            color: var(--juro-primary);
+            font-size: 1.05rem;
+        }
+        .service p {
+            margin: 0;
+            color: var(--juro-text-muted);
+            font-size: 0.9rem;
+        }
+        .service-host {
+            display: inline-block;
+            margin-top: 8px;
+            font-family: var(--juro-font-mono);
+            font-size: 0.8rem;
+            color: var(--juro-accent);
+        }
+    </style>
+</head>
+<body>
+    <header class="juro-topbar">
+        <a href="/" class="juro-topbar-brand">
+            <img src="https://cdn.jsdelivr.net/gh/stefan-ffr/juroct-cdn@main/v1/logo-white.svg" alt="Juro">
+        </a>
+    </header>
+
+    <section class="hero">
+        <h1>Juro</h1>
+        <p>Private Infrastructure · Mesh · Self-Hosted Services</p>
+    </section>
+
+    <div class="services">
+        <a href="https://alias.juroct.net/" class="service">
+            <h3>Wegwerfadressen</h3>
+            <p>Disposable Email Aliases via Mailcow</p>
+            <span class="service-host">alias.juroct.net</span>
+        </a>
+        <a href="https://dashboard.juroct.net/" class="service">
+            <h3>Infra Dashboard</h3>
+            <p>OSPF, BGP, WireGuard, Service Status</p>
+            <span class="service-host">dashboard.juroct.net</span>
+        </a>
+        <a href="https://vpn-dashboard.juroct.net/" class="service">
+            <h3>VPN Dashboard</h3>
+            <p>Road-Warrior Tunnels &amp; Clients</p>
+            <span class="service-host">vpn-dashboard.juroct.net</span>
+        </a>
+        <a href="https://mqtt.juroct.net/" class="service">
+            <h3>MQTT Manager</h3>
+            <p>Mosquitto Broker &amp; ACL</p>
+            <span class="service-host">mqtt.juroct.net</span>
+        </a>
+        <a href="https://mueller.juroct.net/" class="service">
+            <h3>Familie Müller</h3>
+            <p>Family Portal</p>
+            <span class="service-host">mueller.juroct.net</span>
+        </a>
+        <a href="https://bitwarden.juroct.net/" class="service">
+            <h3>Vaultwarden</h3>
+            <p>Password Vault</p>
+            <span class="service-host">bitwarden.juroct.net</span>
+        </a>
+    </div>
+
+    <footer class="juro-footer">
+        Juro · self-hosted
+    </footer>
+</body>
+</html>
